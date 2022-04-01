@@ -1,12 +1,13 @@
 ./crypto.cpp:4:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
 ./crypto.cpp:9:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
-./prinel.cpp:4:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
-./prinel.cpp:9:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+./prinel.cpp:38:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
+./prinel.cpp:48:  Missing space after ;  [whitespace/semicolon] [3]
+./prinel.cpp:67:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
 ./regele.cpp:4:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
 ./regele.cpp:9:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
-./statistics.cpp:14:  Do not use variable-length arrays.  Use an appropriately named ('k' followed by CamelCase) compile-time constant for the size.  [runtime/arrays] [1]
-./statistics.cpp:17:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
-./statistics.cpp:57:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+./statistics.cpp:13:  Do not use variable-length arrays.  Use an appropriately named ('k' followed by CamelCase) compile-time constant for the size.  [runtime/arrays] [1]
+./statistics.cpp:16:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
+./statistics.cpp:56:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
 ./walsh.cpp:17:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
 ./walsh.cpp:17:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
 ./walsh.cpp:18:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
@@ -24,4 +25,4 @@ Done processing ./regele.cpp
 Done processing ./statistics.cpp
 Done processing ./walsh.cpp
 Done processing ./_utils/verif.cpp
-Total errors found: 20
+Total errors found: 21
