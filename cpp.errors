@@ -1,8 +1,19 @@
-./crypto.cpp:4:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
-./crypto.cpp:9:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
-./prinel.cpp:38:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
-./prinel.cpp:48:  Missing space after ;  [whitespace/semicolon] [3]
-./prinel.cpp:67:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+./crypto.cpp:4:  Missing spaces around =  [whitespace/operators] [4]
+./crypto.cpp:5:  If/else bodies with multiple statements require braces  [readability/braces] [4]
+./crypto.cpp:5:  Missing spaces around >=  [whitespace/operators] [3]
+./crypto.cpp:5:  Missing space after ,  [whitespace/comma] [3]
+./crypto.cpp:5:  Missing space after ;  [whitespace/semicolon] [3]
+./crypto.cpp:6:  If/else bodies with multiple statements require braces  [readability/braces] [4]
+./crypto.cpp:6:  Missing space after ;  [whitespace/semicolon] [3]
+./crypto.cpp:6:  Missing space before {  [whitespace/braces] [5]
+./crypto.cpp:20:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
+./crypto.cpp:42:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+./crypto.cpp:51:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+./crypto.cpp:53:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+./crypto.cpp:70:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+./prinel.cpp:39:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
+./prinel.cpp:72:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./prinel.cpp:80:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
 ./regele.cpp:4:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
 ./regele.cpp:9:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
 ./statistics.cpp:13:  Do not use variable-length arrays.  Use an appropriately named ('k' followed by CamelCase) compile-time constant for the size.  [runtime/arrays] [1]
@@ -25,4 +36,4 @@ Done processing ./regele.cpp
 Done processing ./statistics.cpp
 Done processing ./walsh.cpp
 Done processing ./_utils/verif.cpp
-Total errors found: 21
+Total errors found: 32

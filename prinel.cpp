@@ -12,20 +12,21 @@ const int maxn = 1e3 + 2;
 const int inf = 2e9;
 
 vector<int> c(100002, inf), cost(maxn), p(maxn);
-vector<vector<int>> dp(maxn, vector<int>(40000, 0));
+vector<vector<int>> dp(2, vector<int>(40000, 0));
 vector<vector<int>> divisors(100002);
+vector<int> a(maxn);
 
 
-void preprocess() {
-    for (int i = 1; i <= 1e5; ++i) {
-        for (int j = i; j <= 1e5; j += i) {
+void preprocess(int x) {
+    for (int i = 1; i <= x; ++i) {
+        for (int j = i; j <= x; j += i) {
             divisors[j].push_back(i);
         }
     }
     c[1] = 0;
-    for (int i = 1; i <= 1e5; ++i) {
+    for (int i = 1; i <= x; ++i) {
         for (auto u : divisors[i]) {
-            if (i + u <= 1e5) {
+            if (i + u <= x) {
                 c[i + u] = min(c[i + u], c[i] + 1);
             }
         }
@@ -40,28 +41,40 @@ int main() {
     cin.tie(0);
     cout.tie(0);
 
-    preprocess();
     int n, k;
     cin >> n >> k;
     int sum = 0;
+    int maxi = 0;
     for (int i = 1; i <= n; ++i) {
-        int x;cin >> x;
-        cost[i] = c[x];
+        cin >> a[i];
+        maxi = max(maxi, a[i]);
+    }
+    preprocess(maxi);
+    for (int i = 1; i <= n; ++i) {
+        cost[i] = c[a[i]];
         sum += cost[i];
     }
     for (int i = 1; i <= n; ++i) {
         cin >> p[i];
     }
-    k = min(k, sum);
+    if (k >= sum) {
+        long long ans = 0;
+        for (int i = 1; i <= n; ++i) {
+            ans += p[i];
+        }
+        cout << ans << '\n';
+        return 0;
+    }
     for (int i = 1; i <= n; ++i) {
         for (int j = 0; j <= k; ++j) {
-            dp[i][j] = dp[i - 1][j];
+            dp[i % 2][j] = dp[1 - i % 2][j];
             if (j >= cost[i]) {
-                dp[i][j] = max(dp[i][j], dp[i - 1][j - cost[i]] + p[i]);
+                dp[i % 2][j] = max(dp[i % 2][j], dp[1 - i % 2][j - cost[i]] + p[i]);
             }
         }
     }
-    cout << dp[n][k] << '\n';
+
+    cout << dp[n % 2][k] << '\n';
 
     return 0;
 }
