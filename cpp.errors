@@ -14,11 +14,15 @@
 ./prinel.cpp:39:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
 ./prinel.cpp:72:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
 ./prinel.cpp:80:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
-./regele.cpp:4:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
-./regele.cpp:9:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+./regele.cpp:18:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
+./regele.cpp:38:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+./regele.cpp:53:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+./regele.cpp:53:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+./regele.cpp:62:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
 ./statistics.cpp:13:  Do not use variable-length arrays.  Use an appropriately named ('k' followed by CamelCase) compile-time constant for the size.  [runtime/arrays] [1]
 ./statistics.cpp:16:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
-./statistics.cpp:56:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+./statistics.cpp:28:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+./statistics.cpp:55:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
 ./walsh.cpp:17:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
 ./walsh.cpp:17:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
 ./walsh.cpp:18:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
@@ -36,4 +40,4 @@ Done processing ./regele.cpp
 Done processing ./statistics.cpp
 Done processing ./walsh.cpp
 Done processing ./_utils/verif.cpp
-Total errors found: 32
+Total errors found: 36

@@ -25,7 +25,7 @@ int main() {
         }
         for (char c : s) {
             ++have_letters[c - 'a'];
-        }
+        } 
         for (int i = 0; i < 26; ++i) {
             v[i].push_back(2 * have_letters[i] - sz);
         }
@@ -36,7 +36,6 @@ int main() {
     int cnt = 0;
     char letter;
     for (int i = 0; i < 26; ++i) {
-        int j = 0;
         int ans = 0;
         int sum = 0;
         for (int j = 0; j < v[i].size(); ++j) {
